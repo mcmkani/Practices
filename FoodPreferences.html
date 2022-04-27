@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"/>
+</head>
+<body>
+    <H1 id="title">Food Preferences</H1>
+    <script src="https://app.zenclass.in/sheets/v1/js/zen/suite/bundle.js"></script>    
+    <p id="description">DOM Manipulation with forms</p>
+    <form id="form" action="">        
+        <div class="form-group row">
+            <label for="txtfname" class="col-sm-2 col-form-label">First Name</label>
+            <div class="col-sm-10">
+                <input type="text" name="txtfname" id="first-name" class="form-group inputField" placeholder="Enter your First Name here" required>
+            </div>
+        </div>        
+        <div class="form-group row">
+            <label for="txtlname" class="col-sm-2 col-form-label">Last Name</label>
+            <div class="col-sm-10">
+                <input type="text" name="txtlname" id="last-name" class="form-group inputField" placeholder="Enter your Last Name here" required>
+            </div>
+        </div>            
+        <div class="form-group row">
+            <label for="address" class="col-sm-2 col-form-label">Address</label>
+            <div class="col-sm-10">
+                <textarea name="address" id="address" class="form-group inputField" placeholder="Enter your address here" required></textarea>
+            </div>
+        </div>  
+        <div class="form-group row">
+            <label for="txtpincode" class="col-sm-2 col-form-label">Pincode</label>
+            <div class="col-sm-10">
+                <input type="text" name="txtpincode" id="pincode" class="form-group inputField" placeholder="Enter your Pincode here" required>
+            </div>
+        </div>          
+        <fieldset class="form-group">
+            <div class="row">
+                <legend class="col-form-label col-sm-2">Gender</legend>
+                <div class="col-sm-10">
+                    <div class="form-check">
+                        <input type="radio" class="form-check-input" name="gender" id="genderradiomale" value="Male">
+                        <label class="form-check-label" for="genderradiomale">
+                            Male                                
+                        </label>
+                    </div>                
+                    <div class="form-check">
+                        <input type="radio" class="form-check-input" name="gender" id="genderradiofemale" value="Female">
+                        <label class="form-check-label" for="genderradiofemale">
+                            Female                                
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input type="radio" class="form-check-input" name="gender" id="genderradioother" value="Other">
+                        <label class="form-check-label" for="genderradioother">
+                            Other                                
+                        </label>
+                    </div>
+            </div>
+            </div>
+        </fieldset>
+        <div class="form-group row">
+            <div class="col-sm-2">Choice of Food</div>
+            <div class="col-sm-10">
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input" type="checkbox" id="chkVeg" value="Veg Meal">
+                    <label for="chkVeg" class="form-check-label">Veg Meal</label>
+                </div>
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input" type="checkbox" id="chkNonVeg" value="Non.Veg Meal">
+                    <label for="chkNonVeg" class="form-check-label">Non.Veg Meal</label>
+                </div>                
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input" type="checkbox" id="chkChinese" value="Chinese">
+                    <label for="chkChinese" class="form-check-label">Chinese</label>
+                </div>                
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input" type="checkbox" id="chkContinental" value="Continental">
+                    <label for="chkContinental" class="form-check-label">Continental</label>
+                </div>                
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input" type="checkbox" id="chkVegan" value="Vegan">
+                    <label for="chkVegan" class="form-check-label">Vegan</label>
+                </div>
+            </div>
+        </div>
+        <div class="form-group row">
+            <label for="txtstate" class="col-sm-2 col-form-label">State</label>
+            <div class="col-sm-10">
+                <input type="text" name="txtstate" id="txtstate" class="inputField" placeholder="Enter your state here" required>
+            </div>
+        </div>  
+        <div class="form-group row">
+            <label for="txtcountry" class="col-sm-2 col-form-label">Country</label>
+            <div class="col-sm-10">
+                <input type="text" name="txtcountry" id="txtcountry" class="inputField" placeholder="Enter your country here" required>
+            </div>
+        </div>   
+        <br/> 
+        <button class="btn btn-primary" id="submit">Submit</button>
+        <br/>  
+
+    <br/>
+    <table id="tblSummary" class="table table-striped table-bordered">
+        <thead>
+            <tr>
+                <td>First Name</td>
+                <td>Last Name</td>
+                <td>Address</td>                
+                <td>Pincode</td>
+                <td>Gender</td>
+                <td>Food Choice</td>
+                <td>State</td>
+                <td>Country</td>
+            </tr>
+        </thead>
+        <tbody id="tblBody">
+
+        </tbody>
+    </table>
+</form>
+    <script type="text/javascript" src="script.js"></script>
+</body>
+</html>
